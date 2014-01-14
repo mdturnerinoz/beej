@@ -9,7 +9,9 @@ clean :
 	$(RM) $(EXE) *~ *.dSYM/
 run :
 ifeq ($(URL),$(EMPTY))
-	./$(EXE) http://beej.us
+	@echo
+	@echo 'URL needed ... e.g.: make run URL=beej.us'
+	@echo
 else
 	./$(EXE) $(URL)
 endif
