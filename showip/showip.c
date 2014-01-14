@@ -53,6 +53,8 @@ int main(int argc, char *argv[])
         printf("  %s: %s\n", ipver, ipstr);
     }
 
+	printf("\n");  
+
     freeaddrinfo(res); // free the linked list
 
     return 0;
