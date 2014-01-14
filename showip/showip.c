@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
         return 2;
     }
 
-    printf("IP addresses for %s:\n\n", argv[1]);
+    printf("\nIP addresses for %s:\n\n", argv[1]);
 
     for(p = res;p != NULL; p = p->ai_next) {
         void *addr;
@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
         printf("  %s: %s\n", ipver, ipstr);
     }
 
-	printf("\n");  
+    printf("\n");  
 
     freeaddrinfo(res); // free the linked list
 

@@ -7,11 +7,11 @@ all :  $(EXE)
 $(EXE) : $(SRC)
 clean :
 	$(RM) $(EXE) *~ *.dSYM/
-run :
+run : all
 ifeq ($(URL),$(EMPTY))
 	@echo
 	@echo 'URL needed ... e.g.: make run URL=beej.us'
 	@echo
 else
-	./$(EXE) $(URL)
+	@./$(EXE) $(URL)
 endif
